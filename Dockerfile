@@ -17,27 +17,4 @@ WORKDIR /app
 RUN python3.6 -m pip install -r requirements.txt
 EXPOSE 80
 
-#ENTRYPOINT ["python3.6", "server.py"]
-
 CMD python3.6 server.py
-
-
-# Install uwsgi Python web server
-#RUN pip install uwsgi
-
-
-#RUN ls -a
-
-# Create app directory
-#COPY . /webapp
-
-# Set the default directory for our environment
-#ENV HOME /webapp
-#WORKDIR /webapp
-
-
-# Install app requirements
-#RUN pip install -r requirements.txt
-
-# Expose port 8000 for uwsgi
-#EXPOSE 8000
